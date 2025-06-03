@@ -1,4 +1,0 @@
-mysql-connector
-requests
-pandas
-redis
