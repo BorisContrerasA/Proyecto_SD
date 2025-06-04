@@ -1,0 +1,19 @@
+FROM ubuntu:20.04
+
+ENV DEBIAN_FRONTEND=noninteractive
+
+# Actualiza e instala Python, pip, curl, bash y Docker CLI
+RUN apt-get update && \
+    apt-get install -y python3 python3-pip curl bash docker.io
+
+WORKDIR /scripts
+
+# Copiar scripts
+COPY script.sh /scripts/script.sh
+COPY requirements.txt /scripts/requirements.txt
+
+# Instalar Python
+RUN pip3 install --no-cache-dir -r /scripts/requirements.txt
+
+# Comando por defecto
+CMD ["/bin/bash", "/scripts/script.sh"]
