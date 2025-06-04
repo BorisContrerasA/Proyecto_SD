@@ -8,7 +8,7 @@
 ### Paso 1: Instalar requerimientos manualmente
 > pip install -r requirements.txt
 ### Paso 2: Ejecutar script.sh en bash local. (Pull de la imagen y ejecucion del container.) Importante, el archivo podria requerir permisos de ejecucion.
-> bash script.sh
+> bash script.sh \\
 > chmod +x script.sh
 ## En caso de que script.sh no funcione.
 ### Paso 2.1.1 (En caso de que script.sh no funcione, se debe realizar el pull y la inicializacion manualmente.)
