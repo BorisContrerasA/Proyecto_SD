@@ -1,5 +1,6 @@
 # Entrega 2 SD
 ### Paso 0: Ejecutar scrapping.py de manera independiente para obtener los .csv necesarios para las pruebas, estos deben estar en el formato "tiempo*", en donde '*' corresponde al numero de csv ascendente.
+> tiempo1.csv, tiempo2.csv, tiempo3.csv, etc.
 ### Paso 1: Inicializar el dockerfile para preparar el entorno con el siguiente comando dentro de la carpeta Entrega2/
 > docker-compose up --build
 >
