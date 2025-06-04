@@ -22,7 +22,7 @@ chmod +x script.sh
 ```
  docker pull fluddeni/hadoop-pig
 ```
--- Inicializar la imagen\
+-- Inicializar la imagen
 ```
 docker run -it   -v "$PWD:/scripts"   fluddeni/hadoop-pig   bash
 ```
