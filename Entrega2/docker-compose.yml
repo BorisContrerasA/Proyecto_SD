@@ -1,13 +1,11 @@
 version: "3.8"
 
 services:
-  runner:
-    build:
-      context: .
+  ubuntu-runner:
+    build: .
     volumes:
       - .:/scripts
+      - /var/run/docker.sock:/var/run/docker.sock  # Para ejecutar Docker dentro del contenedor
     working_dir: /scripts
     tty: true
     stdin_open: true
-    privileged: true
-    command: /scripts/script.sh
