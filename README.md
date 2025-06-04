@@ -12,7 +12,7 @@ pip install -r requirements.txt
 ```
 ### Paso 2: Ejecutar script.sh en bash local. (Pull de la imagen y ejecucion del container.) Importante, el archivo podria requerir permisos de ejecucion.
 ```
- bash script.sh\
+ bash script.sh
 ```
 ```
 chmod +x script.sh
@@ -20,11 +20,11 @@ chmod +x script.sh
 ## En caso de que script.sh no funcione.
 ### Paso 2.1.1 (En caso de que script.sh no funcione, se debe realizar el pull y la inicializacion manualmente.)
 ```
- docker pull fluddeni/hadoop-pig\
+ docker pull fluddeni/hadoop-pig
 ```
 -- Inicializar la imagen\
 ```
-docker run -it   -v "$PWD:/scripts"   fluddeni/hadoop-pig   bash\
+docker run -it   -v "$PWD:/scripts"   fluddeni/hadoop-pig   bash
 ```
 > -- con esto todo lo de Entrega2/ se incluira en el container del docker.
 ### Paso 2.1.2: Se deberia estar en el bash del contenedor, por lo que lo siguiente es
