@@ -3,11 +3,11 @@ set -e
 
 echo "Esperando a que Elasticsearch esté disponible..."
 until curl -s http://elasticsearch:9200 | grep -q cluster_name; do
-  echo "⏳ Aún no disponible, esperando..."
+  echo "Elasticsearch aún no disponible, esperando"
   sleep 5
 done
 
-echo "✅ Elasticsearch disponible"
+echo "Elasticsearch disponible"
 
 # Opcional: espera unos segundos más por seguridad
 sleep 5
